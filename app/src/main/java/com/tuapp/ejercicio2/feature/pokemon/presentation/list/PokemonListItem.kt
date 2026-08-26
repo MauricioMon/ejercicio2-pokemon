@@ -10,9 +10,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.ui.Alignment
 import coil.compose.AsyncImage
 import com.tuapp.ejercicio2.feature.pokemon.domain.model.Pokemon
+import androidx.compose.foundation.layout.fillMaxWidth
 
 @Composable
 fun PokemonListItem(
@@ -22,6 +24,7 @@ fun PokemonListItem(
 ) {
     Card(
         modifier = modifier
+            .fillMaxWidth()
             .padding(horizontal = 16.dp, vertical = 4.dp)
             .clickable { onClick(pokemon) }
     ) {

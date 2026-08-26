@@ -36,7 +36,9 @@ fun AppNavGraph(
                 navArgument(ARG_POKEMON_NAME) { type = NavType.StringType }
             )
         ) {
-            PokemonDetailScreen()
+            PokemonDetailScreen(
+                onBackClick = { navController.popBackStack() }
+            )
         }
     }
 }
